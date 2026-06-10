@@ -14,9 +14,8 @@ VS Code: Install the Live Server extension and click Go Live.
    - **VS Code**: Install the **Live Server** extension and click **Go Live**.
    - **Python**: Run `python -m http.server 8000` in the directory.
    - **Node.js**: Run `npx live-server` in the directory.
----
-└── app.js         # JavaScript application state, rendering logic, localStorage synchronization
-```
+
+
 Technical Breakdown
 1. index.html
 Defines the DOM structure, including a <template> element for rendering task list items dynamically. It handles accessibility attributes and outlines the shell containing the sidebar, main content area, and task input form.
@@ -65,8 +64,7 @@ HTML5: Semantic tags, validation, templates.
 CSS3: Variables, Grid, Flexbox, Media Queries, Container Queries.
 Vanilla JavaScript: Modern ES6+ syntax, LocalStorage API, dynamic DOM manipulation.
 
-Screenshot:
-<img width="1366" height="768" alt="Screenshot (759)" src="https://github.com/user-attachments/assets/d5eb9fad-4ca2-4c13-abf6-a5575f89c483" />
+
 
 
 
