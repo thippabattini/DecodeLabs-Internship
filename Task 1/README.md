@@ -1,6 +1,7 @@
 Focus Board — Responsive Task Manager
 
-Focus Board is a clean, modern, and highly responsive web-based task management application. Built from scratch with a strong focus on semantics, accessibility, and modern CSS techniques (such as CSS Grid, Flexbox, and Container Queries), it provides a clutter-free and accessible workspace to keep you organized.
+Focus Board is a clean, modern, and highly responsive web-based task management application. Built from sc<img width="1366" height="768" alt="Screenshot (759)" src="https://github.com/user-attachments/assets/95067662-fe9e-4b8a-948d-adf20c453ee0" />
+ratch with a strong focus on semantics, accessibility, and modern CSS techniques (such as CSS Grid, Flexbox, and Container Queries), it provides a clutter-free and accessible workspace to keep you organized.
 
 Running Locally
 Clone or download this repository.
@@ -66,5 +67,6 @@ CSS3: Variables, Grid, Flexbox, Media Queries, Container Queries.
 Vanilla JavaScript: Modern ES6+ syntax, LocalStorage API, dynamic DOM manipulation.
 
 Screenshots:
-<img width="1366" height="768" alt="Screenshot (759)" src="https://github.com/user-attachments/assets/07043bc0-dfcc-4e9b-a3ed-cd44616bd635" />
+<img width="1366" height="768" alt="Screenshot (759)" src="https://github.com/user-attachments/assets/d429d29b-0200-4f71-9f8d-1046714bd5e8" />
+
 
