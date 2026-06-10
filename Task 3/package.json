@@ -1,0 +1,38 @@
+{
+  "name": "student-enrollment-api",
+  "version": "1.0.0",
+  "description": "DecodeLabs Project 3 — Student Course Enrollment System with PostgreSQL + Prisma",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio",
+    "db:seed": "node prisma/seed.js",
+    "pillar1:demo": "node scripts/pillar1-constraint-demo.js",
+    "pillar2:demo": "node scripts/pillar2-connection-demo.js",
+    "pillar3:demo": "node scripts/pillar3-crud-demo.js"
+  },
+  "keywords": [
+    "express",
+    "prisma",
+    "postgresql",
+    "decodeLabs"
+  ],
+  "license": "MIT",
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "prisma": "^5.22.0"
+  }
+}

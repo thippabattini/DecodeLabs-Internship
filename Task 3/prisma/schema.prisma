@@ -1,0 +1,61 @@
+// Pillar 1 — Schema Design
+// Student Course Enrollment System
+// Relationships: One-to-One, One-to-Many, Many-to-Many (junction table)
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Student {
+  id          Int      @id @default(autoincrement())
+  email       String   @unique @db.VarChar(255)
+  fullName    String   @map("full_name") @db.VarChar(255)
+  dateOfBirth DateTime @map("date_of_birth") @db.Date
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  profile     StudentProfile?
+  enrollments Enrollment[]
+
+  @@map("students")
+}
+
+model StudentProfile {
+  id        Int     @id @default(autoincrement())
+  studentId Int     @unique @map("student_id")
+  bio       String? @db.Text
+  phone     String? @db.VarChar(20)
+
+  student Student @relation(fields: [studentId], references: [id], onDelete: Cascade)
+
+  @@map("student_profiles")
+}
+
+model Course {
+  id      Int    @id @default(autoincrement())
+  code    String @unique @db.VarChar(20)
+  title   String @db.VarChar(255)
+  credits Int
+
+  enrollments Enrollment[]
+
+  @@map("courses")
+}
+
+model Enrollment {
+  id         Int       @id @default(autoincrement())
+  studentId  Int       @map("student_id")
+  courseId   Int       @map("course_id")
+  enrolledAt DateTime  @default(now()) @map("enrolled_at") @db.Date
+  grade      String?   @db.VarChar(2)
+
+  student Student @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  course  Course  @relation(fields: [courseId], references: [id], onDelete: Cascade)
+
+  @@unique([studentId, courseId])
+  @@map("enrollments")
+}

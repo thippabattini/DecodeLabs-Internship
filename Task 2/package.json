@@ -1,0 +1,23 @@
+{
+  "name": "mern-backend-api",
+  "version": "1.0.0",
+  "description": "Simple MERN stack backend API with Express and MongoDB",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test:api": "node scripts/test-api.js"
+  },
+  "keywords": ["mern", "express", "mongodb", "api"],
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "mongoose": "^8.9.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
