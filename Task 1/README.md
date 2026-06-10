@@ -52,7 +52,6 @@ Task 1/
 
 ♿ Accessibility (a11y) & Best Practices
 Focus Board was designed with modern accessibility guidelines in mind:
-
 Semantic HTML: Built using appropriate landmark elements (<header>, <aside>, <main>, <footer>, <section>) and interactive controls.
 Skip Link: Includes a hidden-by-default "Skip to main content" link for keyboard/screen-reader users.
 Screen Reader Friendly: Uses .sr-only utility classes to hide visual-only elements and provides appropriate labeling (e.g., aria-expanded and aria-controls for the mobile navigation drawer).
