@@ -59,7 +59,7 @@ Screen Reader Friendly: Uses .sr-only utility classes to hide visual-only elemen
 Reduced Motion: Responsive styling adapts transitions to respect system-level user preferences (prefers-reduced-motion: reduce).
 Focus Indicators: Clear focus outlines are visible on all interactive elements.
 
-🛠️ Built With
+🛠️ Built With:
 HTML5: Semantic tags, validation, templates.
 CSS3: Variables, Grid, Flexbox, Media Queries, Container Queries.
 Vanilla JavaScript: Modern ES6+ syntax, LocalStorage API, dynamic DOM manipulation.
